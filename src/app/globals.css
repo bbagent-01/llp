@@ -1,23 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* BB Base Theme — Surface */
-  --color-surface-1: #09090b;
-  --color-surface-2: #0f0f12;
-  --color-surface-3: #16161a;
-  --color-surface-4: #1e1e24;
-
-  /* Accents */
-  --color-coral: #e8735e;
-  --color-coral-light: #f09a8a;
-  --color-coral-dark: #c45a47;
-  --color-amber: #d4a23a;
-  --color-amber-light: #e4be6a;
+  /* Base Theme 2 — "The Axel" */
+  --color-bg: #F6F4F0;
+  --color-surface: #FFFFFF;
+  --color-text: #1A1A18;
+  --color-text-secondary: #6B6860;
+  --color-accent: #C4A06A;
+  --color-accent-dark: #9A7B4F;
+  --color-border: #E5E1DA;
 
   /* Typography */
-  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "DM Serif Display", serif;
   --font-mono: "JetBrains Mono", monospace;
 }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
@@ -25,6 +24,9 @@ html {
 
 body {
   font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
